@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PHIA-2 Privacy Policy</title>
+  </head>
+  <body>
+    <header>
+      <h1>PHIA-2 Privacy Policy</h1>
+      <p>Last updated: 11 October 2026</p>
+      <nav aria-label="Policies">
+        <a href="index.html">Terms of Service</a> |
+        <a href="privacy-policy.html" aria-current="page">Privacy Policy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="scope">
+        <h2 id="scope">1. Scope and contact</h2>
+        <p>Rebstew operates PHIA-2 (the “Bot”) and is responsible for the Bot’s processing described here. This policy covers information the Bot receives through Discord and stores or uses to provide its features. Discord separately processes information under its <a href="https://discord.com/privacy">Privacy Policy</a>.</p>
+        <p>To ask a privacy question, request a copy or correction of your Bot data, or request deletion, send a direct message to the server’s ModMail bot to open a ticket. If you need help opening a ticket, mention the @Moderator or @Staff role in the server.</p>
+      </section>
+
+      <section aria-labelledby="data">
+        <h2 id="data">2. Information the Bot handles</h2>
+        <ul>
+          <li><strong>Predictions and standings:</strong> your Discord user ID, the driver assigned for a race, the race and season, and your points or ranking. These records are stored in the Bot’s SQLite database.</li>
+          <li><strong>Commands and gameplay:</strong> command choices and your Discord user ID are used to respond to requests. During an active trivia game, the Bot reads messages in the game channel to check answers and holds participant IDs and scores in memory until the game ends. It does not store those scores in its SQLite database.</li>
+          <li><strong>Submissions:</strong> when you submit a banner or icon, the Bot posts the image and your Discord username and user ID in a server forum thread. Staff-submitted trivia questions and word-search words are stored in the Bot’s SQLite database.</li>
+          <li><strong>Moderation:</strong> the Bot uses user IDs and relevant server or channel information to carry out staff commands, detect activity in a configured honeypot channel, and report certain Discord AutoMod timeouts. Moderation messages may include a username or user ID, an action, a reason, and a duration. The Bot posts these records in configured Discord channels or console logs; it does not store them in its SQLite database.</li>
+          <li><strong>Technical records:</strong> service and error logs may contain command names, Discord IDs, usernames, channel details, and error information needed to troubleshoot the Bot. Per-user command cooldowns are held temporarily in memory.</li>
+        </ul>
+        <p>The Bot receives Discord message events where it has access, but its current features do not create a general archive of server messages in its SQLite database. Staff purge commands fetch recent messages to identify and delete matching messages.</p>
+      </section>
+
+      <section aria-labelledby="purpose">
+        <h2 id="purpose">3. Why information is used</h2>
+        <p>We use this information to assign and show predictions, calculate standings, run games, handle image submissions, perform requested moderation actions, prevent abuse, and keep the Bot working. Where data protection law requires a lawful basis, these activities rely on our legitimate interests in operating the requested Bot features and maintaining server safety, subject to your rights under applicable law.</p>
+        <p>Formula 1 schedule and results information is retrieved from OpenF1 and Jolpica. The Bot does not send your Discord user ID or game messages to those data sources as part of these requests.</p>
+      </section>
+
+      <section aria-labelledby="sharing">
+        <h2 id="sharing">4. Visibility and sharing</h2>
+        <p>Predictions and standings may be shown in Bot replies and leaderboards. Some replies are private to the person using a command; others can be made visible in a server channel. Trivia results, image submissions, and some moderation records are posted to Discord channels. People who can view those channels may see that information. Bot operators and authorized server staff may access information needed to run the Bot, moderate the server, and handle requests.</p>
+        <p>Discord receives content that the Bot posts on its platform and handles it under Discord’s policies. The Bot’s host may process technical logs needed to run the service. We do not sell your Bot data or use it for advertising.</p>
+      </section>
+
+      <section aria-labelledby="retention">
+        <h2 id="retention">5. How long information is kept</h2>
+        <p>Predictions and standings remain in the Bot’s database until a valid deletion request is handled, they are no longer needed for the feature, or the Bot is discontinued. The current Bot code has no automatic expiry for those database records. Active trivia scores and command cooldowns are temporary in-memory data that end with the game or cooldown, or when the Bot restarts.</p>
+        <p>Images, game results, and moderation records posted in Discord channels remain there until removed under the server’s and Discord’s retention practices. Console and hosting log retention depends on the operator’s logging setup. <strong>[CONFIRM CONSOLE/HOSTING LOG RETENTION BEFORE PUBLICATION.]</strong> Request deletion through ModMail; staff will review Bot-controlled records and relevant Discord posts. Discord may retain information under its own policy.</p>
+      </section>
+
+      <section aria-labelledby="rights">
+        <h2 id="rights">6. Your choices and rights</h2>
+        <p>You can stop using the Bot. You can request access to, correction of, or deletion of data associated with your Discord user ID through ModMail. Please provide your Discord user ID so staff can locate the records and may verify that the account is yours. We will handle requests in line with applicable law and Discord’s developer requirements; some information may need to be retained where law requires it.</p>
+        <p>Depending on where you live, you may also have rights to object to processing, restrict processing, or complain to a data protection authority. For data held by Discord rather than the Bot operator, use Discord’s privacy controls or contact Discord directly.</p>
+      </section>
+
+      <section aria-labelledby="security">
+        <h2 id="security">7. Security</h2>
+        <p>We limit access to Bot data to people who need it to operate and moderate the service and take reasonable steps to protect it. No online service can guarantee absolute security. If you believe Bot data has been exposed, contact staff through ModMail.</p>
+      </section>
+
+      <section aria-labelledby="changes">
+        <h2 id="changes">8. Changes to this policy</h2>
+        <p>We may update this policy when the Bot or our data practices change. We will post the revised policy and update the date above.</p>
+      </section>
+    </main>
+  </body>
+</html>
